@@ -1,73 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="96.534">
-<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="9.835">
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="19" time="90.63">
+<testcase classname="F01_Register | users could register with new accounts" name="guest user could register with valid data successfully" time="8.742">
 <system-out><![CDATA[Given user go to register page..............................................passed
 When user select gender type................................................passed
 And user enter first name "automation" and last name "tester"...............passed
 And user enter date of birth................................................passed
-And user enter email "testjj@example.com" field.............................passed
+And user enter email "test123@example.com" field............................passed
 And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
 And user clicks on register button..........................................passed
 Then success message is displayed...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="6.117">
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with valid email and password" time="4.933">
 <system-out><![CDATA[Given user go to login page.................................................passed
-When user login with "valid" "testjj@example.com" and "P@ssw0rd"............passed
+When user login with "valid" "test123@example.com" and "P@ssw0rd"...........passed
 And user press on login button..............................................passed
 Then user login to the system successfully..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="5.887">
+<testcase classname="F02_Login | users could use login functionality to use their accounts" name="user could login with invalid email and password" time="4.467">
 <system-out><![CDATA[Given user go to login page.................................................passed
 When user login with "invalid" "test@example.com" and "P@ssw0fffrd".........passed
 And user press on login button..............................................passed
 Then user could not login to the system.....................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F03_currencies | user can change currency" name="user changes currency to EUR" time="4.18">
+<testcase classname="F03_currencies | user can change currency" name="user changes currency to EUR" time="4.227">
 <system-out><![CDATA[When change to EUR..........................................................passed
 Then products in EUR........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Search" name="user could search using product name" time="3.856">
+<testcase classname="F04_Search" name="user could search using product name" time="3.857">
 <system-out><![CDATA[When user enters book in search.............................................passed
 Then successful search and relevant results.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Search" name="user could search using product name 2" time="3.767">
+<testcase classname="F04_Search" name="user could search using product name 2" time="3.811">
 <system-out><![CDATA[When user enters laptop in search...........................................passed
 Then successful search and relevant results.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Search" name="user could search using product name 3" time="3.867">
+<testcase classname="F04_Search" name="user could search using product name 3" time="3.904">
 <system-out><![CDATA[When user enters nike in search.............................................passed
 Then successful search and relevant results.................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Search" name="user could search using sku" time="5.427">
+<testcase classname="F04_Search" name="user could search using sku" time="5.286">
 <system-out><![CDATA[When user enters SCI_FAITH in search........................................passed
 Then successful search and click on result..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Search" name="user could search using sku 2" time="5.255">
+<testcase classname="F04_Search" name="user could search using sku 2" time="5.239">
 <system-out><![CDATA[When user enters APPLE_CAM in search........................................passed
 Then successful search and click on result..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F04_Search" name="user could search using sku 3" time="5.288">
+<testcase classname="F04_Search" name="user could search using sku 3" time="5.286">
 <system-out><![CDATA[When user enters SF_PRO_11 in search........................................passed
 Then successful search and click on result..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="hovering and selecting items on home page" name="user hovers and selects subcategory" time="3.948">
+<testcase classname="hovering and selecting items on home page" name="user hovers and selects subcategory" time="4.022">
 <system-out><![CDATA[When user hovers on a random category.......................................passed
 And clicks on a random subcategory..........................................passed
 Then page redirects to the chosen subcategory...............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="user clicks on sliders" name="first slider is clickable on home page" time="2.906">
-<failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {using=css selector, value=img[src=&quot;https://demo.nopcommerce.com/images/thumbs/0000079_banner_1.jpg&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56978/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[When user clicks on Nokia slider............................................failed
+<testcase classname="user clicks on sliders" name="first slider is clickable on home page" time="2.837">
+<failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {using=css selector, value=img[src=&quot;https://demo.nopcommerce.com/images/thumbs/0000079_banner_1.jpg&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58165/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[When user clicks on Nokia slider............................................failed
 Then user gets redirected to Nokia page.....................................skipped
 
 StackTrace:
@@ -76,7 +76,7 @@ Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, findElement {using=css selector, value=img[src="https://demo.nopcommerce.com/images/thumbs/0000079_banner_1.jpg"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56978/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58165/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
@@ -87,13 +87,13 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
 	at org.example.stepDefs.D06_homeSlidersStepDef.userClicksOnNokiaSlider(D06_homeSlidersStepDef.java:14)
-	at ✽.user clicks on Nokia slider(file:///C:/Users/Mohamed%20Kandeel/IdeaProjects/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:4)
+	at ✽.user clicks on Nokia slider(file:///D:/Course/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:4)
 ]]></failure>
 </testcase>
-<testcase classname="user clicks on sliders" name="second slider is clickable on home page" time="2.879">
-<failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {using=css selector, value=img[src=&quot;https://demo.nopcommerce.com/images/thumbs/0000080_banner_2.jpg&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56978/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[When user clicks on iPhone slider...........................................failed
+<testcase classname="user clicks on sliders" name="second slider is clickable on home page" time="2.897">
+<failure message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: '4.3.0', revision: 'a4995e2c09*'&#10;System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [null, findElement {using=css selector, value=img[src=&quot;https://demo.nopcommerce.com/images/thumbs/0000080_banner_2.jpg&quot;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58165/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}" type="org.openqa.selenium.NoSuchSessionException"><![CDATA[When user clicks on iPhone slider...........................................failed
 Then user gets redirected to iPhone page....................................skipped
 
 StackTrace:
@@ -102,7 +102,7 @@ Build info: version: '4.3.0', revision: 'a4995e2c09*'
 System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Command: [null, findElement {using=css selector, value=img[src="https://demo.nopcommerce.com/images/thumbs/0000080_banner_2.jpg"]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56978}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:56978/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58165/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:145)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
@@ -113,22 +113,22 @@ Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 1
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at com.sun.proxy.$Proxy26.click(Unknown Source)
+	at com.sun.proxy.$Proxy25.click(Unknown Source)
 	at org.example.stepDefs.D06_homeSlidersStepDef.userClicksOnIPhoneSlider(D06_homeSlidersStepDef.java:24)
-	at ✽.user clicks on iPhone slider(file:///C:/Users/Mohamed%20Kandeel/IdeaProjects/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:8)
+	at ✽.user clicks on iPhone slider(file:///D:/Course/demonopcommerce/src/main/resources/features/F06_homeSliders.feature:8)
 ]]></failure>
 </testcase>
-<testcase classname="F07_followUs | users could open followUs links" name="user opens facebook link" time="4.265">
+<testcase classname="F07_followUs | users could open followUs links" name="user opens facebook link" time="4.149">
 <system-out><![CDATA[When user opens facebook link...............................................passed
 Then "https://www.facebook.com/nopCommerce" is opened in new tab............passed
 ]]></system-out>
 </testcase>
-<testcase classname="F07_followUs | users could open followUs links" name="user opens twitter link" time="4.756">
+<testcase classname="F07_followUs | users could open followUs links" name="user opens twitter link" time="4.755">
 <system-out><![CDATA[When user opens twitter link................................................passed
 Then "https://twitter.com/nopCommerce" is opened in new tab.................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F07_followUs | users could open followUs links" name="user opens rss link" time="3.347">
+<testcase classname="F07_followUs | users could open followUs links" name="user opens rss link" time="3.443">
 <failure message="Index: 1, Size: 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[When user opens rss link....................................................passed
 Then "https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab.failed
 
@@ -137,20 +137,20 @@ java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
 	at java.util.ArrayList.rangeCheck(ArrayList.java:659)
 	at java.util.ArrayList.get(ArrayList.java:435)
 	at org.example.stepDefs.D07_followUsStepDef.isOpenedInNewTab(D07_followUsStepDef.java:24)
-	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///C:/Users/Mohamed%20Kandeel/IdeaProjects/demonopcommerce/src/main/resources/features/F07_followUs.feature:14)
+	at ✽."https://demo.nopcommerce.com/new-online-store-is-open" is opened in new tab(file:///D:/Course/demonopcommerce/src/main/resources/features/F07_followUs.feature:14)
 ]]></failure>
 </testcase>
-<testcase classname="F07_followUs | users could open followUs links" name="user opens youtube link" time="8.147">
+<testcase classname="F07_followUs | users could open followUs links" name="user opens youtube link" time="6.082">
 <system-out><![CDATA[When user opens youtube link................................................passed
 Then "https://www.youtube.com/user/nopCommerce" is opened in new tab........passed
 ]]></system-out>
 </testcase>
-<testcase classname="F08_Wishlist | Checking wishlist feature" name="Adding an item to wishlist from homepage" time="3.352">
+<testcase classname="F08_Wishlist | Checking wishlist feature" name="Adding an item to wishlist from homepage" time="3.486">
 <system-out><![CDATA[When user adds HTC phone to wishlist........................................passed
 Then phone added to wishlist successfully...................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="F08_Wishlist | Checking wishlist feature" name="Adding item to wishlist and checking its quantity" time="8.846">
+<testcase classname="F08_Wishlist | Checking wishlist feature" name="Adding item to wishlist and checking its quantity" time="8.697">
 <system-out><![CDATA[When user adds HTC phone to wishlist........................................passed
 And go to wishlist page.....................................................passed
 Then check if quantity is more than 0.......................................passed

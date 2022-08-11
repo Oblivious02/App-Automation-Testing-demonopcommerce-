@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: org.example.testRunner.runner
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 92.526 s <<< FAILURE! - in org.example.testRunner.runner
+org.example.testRunner.runner.runScenario  Time elapsed: 2.857 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=img[src="https://demo.nopcommerce.com/images/thumbs/0000079_banner_1.jpg"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58165/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
+org.example.testRunner.runner.runScenario  Time elapsed: 2.902 s  <<< FAILURE!
+org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'DESKTOP-515QAJ5', ip: '192.168.1.20', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, findElement {using=css selector, value=img[src="https://demo.nopcommerce.com/images/thumbs/0000080_banner_2.jpg"]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 104.0.5112.81, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\MOHAME~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58165}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58165/devtoo..., se:cdpVersion: 104.0.5112.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+
+org.example.testRunner.runner.runScenario  Time elapsed: 3.454 s  <<< FAILURE!
+java.lang.IndexOutOfBoundsException: Index: 1, Size: 1
+
